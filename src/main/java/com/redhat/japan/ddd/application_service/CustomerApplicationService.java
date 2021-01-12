@@ -50,54 +50,6 @@ public class CustomerApplicationService {
         customer.setPrimaryEmailAddress(primaryEmailAddress);
         customer.setSecondaryEmailAddress(secondaryEmailAddress);
 
-        if (customerFirstName != null) {
-            customer.setCustomerFirstName(customerFirstName);
-        }
-
-        if (customerLastName != null) {
-            customer.setCustomerLastName(customerLastName);
-        }
-
-        if (streetAddress1 != null) {
-            customer.setStreetAddress1(streetAddress1);
-        }
-
-        if (streetAddress2 != null) {
-            customer.setStreetAddress2(streetAddress2);
-        }
-
-        if (city != null) {
-            customer.setCity(city);
-        }
-
-        if (stateOrProvince != null) {
-            customer.setStateOrProvince(stateOrProvince);
-        }
-
-        if (postalCode != null) {
-            customer.setPostalCode(postalCode);
-        }
-
-        if (country != null) {
-            customer.setCountry(country);
-        }
-
-        if (homePhone != null) {
-            customer.setHomePhone(homePhone);
-        }
-
-        if (mobilePhone != null) {
-            customer.setMobilePhone(mobilePhone);
-        }
-
-        if (primaryEmailAddress != null) {
-            customer.setPrimaryEmailAddress(primaryEmailAddress);
-        }
-
-        if (secondaryEmailAddress != null) {
-            customer.setSecondaryEmailAddress(secondaryEmailAddress);
-        }
-
         customerDao.saveCustomer(customer);
     }
 
